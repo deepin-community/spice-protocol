@@ -1,0 +1,198 @@
+spice-protocol (0.14.3-1) unstable; urgency=medium
+
+  * New upstream version 0.14.3 (Closes: #976333)
+  * d/watch: allow .xz extension too (upstream switched to it at 0.14.3)
+  * use meson to build spice-protocol (add it to Build-Depends)
+  * remove references to removed files from d/copyright
+    (spice/controller_prot.h spice/foreign_menu_prot.h)
+  * hack: remove arch-specific but unused libdir= assignment
+    in generated spice-protocol.pc
+
+ -- Michael Tokarev <mjt@tls.msk.ru>  Fri, 04 Dec 2020 15:45:00 +0300
+
+spice-protocol (0.14.1-2) unstable; urgency=medium
+
+  [ Laurent Bigonville ]
+  * debian/docs: Install the README.md and CHANGELOG.md files
+
+  [ Michael Tokarev ]
+  * set Maintainer to the QEMU team (Closes: #911429)
+  * set VCS links to point to qemu-team on salsa
+  * use secure (https) URLs in d/control & d/copyright
+
+ -- Michael Tokarev <mjt@tls.msk.ru>  Thu, 23 Jul 2020 15:22:04 +0300
+
+spice-protocol (0.14.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * debian/gbp.conf: Enable pristine-tar
+  * Bump Standards-Version to 4.5.0 (no further changes)
+  * Bump debhelper compatibility to 12
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 25 Apr 2020 12:18:50 +0200
+
+spice-protocol (0.14.0-1) unstable; urgency=medium
+
+  * Team upload.
+  [ Ondřej Nový ]
+  * d/copyright: Change Format URL to correct one
+  * d/changelog: Remove trailing whitespaces
+  * d/control: Remove trailing whitespaces
+
+  [ Laurent Bigonville ]
+  * Enable upstream tarball signature verification
+  * New upstream version 0.14.0
+  * debian/docs: Dropped, the NEWS file has been renamed to CHANGELOG.md and
+    is now installed by dh_installchangelogs
+  * debian/control: Bump Standards-Version to 4.4.0 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 02 Aug 2019 12:01:46 +0200
+
+spice-protocol (0.12.14-1) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control: Update the Vcs-* fields to point to salsa
+  * New upstream version 0.12.14 (Closes: #904075)
+  * debian/control: Bump Standards-Version to 4.2.1 (no further changes)
+  * Bump debhelper compatibility to 11
+  * debian/watch: Use https:// instead of http://
+  * debian/rules: Disable DH_VERBOSE by default
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 29 Aug 2018 17:14:51 +0200
+
+spice-protocol (0.12.13-2) unstable; urgency=medium
+
+  * Mark libspice-protocol-dev Multi-Arch: foreign. (Closes: #842476)
+    Thanks to Helmut Grohne <helmut@subdivi.de>
+
+ -- Liang Guo <guoliang@debian.org>  Sun, 06 Aug 2017 18:18:49 +0800
+
+spice-protocol (0.12.13-1) unstable; urgency=low
+
+  * New upstream release
+  * Update debian/copyright, spice/enums.h license change
+  * Bump Standards-Version to 4.0.0 (no changes needed)
+
+ -- Liang Guo <guoliang@debian.org>  Sun, 06 Aug 2017 16:26:56 +0800
+
+spice-protocol (0.12.12-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Liang Guo <guoliang@debian.org>  Sat, 08 Oct 2016 21:22:00 +0800
+
+spice-protocol (0.12.11-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+  * Use secure uri in vcs*
+  * Bump compat version to 9
+  * debian/copyright:
+    - Merge paragraphs with same shot name
+    - Correct wrong shot license name
+
+ -- Liang Guo <guoliang@debian.org>  Wed, 22 Jun 2016 13:38:19 +0800
+
+spice-protocol (0.12.10-1) unstable; urgency=medium
+
+  * New upstream release
+  * fixed vcs http url
+
+ -- Michael Tokarev <mjt@tls.msk.ru>  Thu, 08 Oct 2015 21:55:44 +0300
+
+spice-protocol (0.12.7-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add mjt to uploaders
+  * Remove ${shlibs:Depends} as we're only shipping headers
+  * Bump Standards-Version to 3.9.5 (no changes needed)
+
+ -- Michael Tokarev <mjt@tls.msk.ru>  Fri, 23 May 2014 21:20:24 +0400
+
+spice-protocol (0.12.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.4
+  * Update VCS-* to use canonical URIs
+
+ -- Liang Guo <guoliang@debian.org>  Wed, 17 Jul 2013 17:45:43 +0800
+
+spice-protocol (0.12.5-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Liang Guo <guoliang@debian.org>  Thu, 09 May 2013 21:06:35 +0800
+
+spice-protocol (0.12.5-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Liang Guo <guoliang@debian.org>  Thu, 11 Apr 2013 23:43:28 +0800
+
+spice-protocol (0.12.3-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Liang Guo <guoliang@debian.org>  Sun, 30 Dec 2012 22:53:53 +0800
+
+spice-protocol (0.12.2-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Liang Guo <guoliang@debian.org>  Wed, 26 Sep 2012 21:11:09 +0800
+
+spice-protocol (0.12.0-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - Update my e-mail address
+    - Remove DMUA
+    - Bump Standards-Version to 3.9.3
+
+ -- Liang Guo <guoliang@debian.org>  Sun, 02 Sep 2012 09:27:34 +0800
+
+spice-protocol (0.10.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Liang Guo <bluestonechina@gmail.com>  Mon, 23 Jan 2012 11:07:19 +0800
+
+spice-protocol (0.10.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Liang Guo <bluestonechina@gmail.com>  Tue, 29 Nov 2011 12:09:29 +0800
+
+spice-protocol (0.8.2-1) unstable; urgency=low
+
+  [ Liang Guo ]
+  * New upstream release
+  * Update Format field in debian/copyright
+
+  [ Aron Xu ]
+  * debian/control: set DMUA.
+
+ -- Liang Guo <bluestonechina@gmail.com>  Thu, 20 Oct 2011 10:21:30 +0800
+
+spice-protocol (0.8.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Remove include_types_h_in_controller_port.patch, applied upstream
+
+ -- Liang Guo <bluestonechina@gmail.com>  Mon, 18 Jul 2011 21:57:56 +0800
+
+spice-protocol (0.8.0-2) unstable; urgency=low
+
+  * Add missing spice/types include in spice/controller_prot.h
+  * Bump Standards-Version to 3.9.2, nothing to change
+  * Update debian/copyright to compliant with DEP-5
+  * Set Architecture to all
+
+ -- Liang Guo <bluestonechina@gmail.com>  Sun, 03 Jul 2011 01:56:51 +0800
+
+spice-protocol (0.8.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #603697)
+
+ -- Liang Guo <bluestonechina@gmail.com>  Sun, 10 Apr 2011 23:09:10 +0800
